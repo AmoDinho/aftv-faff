@@ -15,8 +15,9 @@ A user searches AFTV videos, then chooses one they like. The user would like to 
 
 ### Stack:
 
-GraphQL
-DynamoDB
-AWS Lambda (NodeJS)
-VueJS
+* GraphQL
+* DynamoDB
+* AWS Lambda (NodeJS)
+* VueJS
+* S3
 
