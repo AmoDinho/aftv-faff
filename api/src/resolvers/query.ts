@@ -9,10 +9,25 @@ export const getFanCams = (args: any, context: any) => {
     const CHANNEL_ID: string = 'channelId=UCBTy8j2cPy6zw68godcE7MQ'
     const KEY = `&key=${process.env.YOUTUBE_API_KEY}`
 
-    const fanCams: object = fetch(`${PATH_BASE}${CHANNEL_ID}${KEY}`)
-        .then(response => console.log(response.json))
-        .catch(error => console.log(error))
 
 
-    return null
+
+    function fanCams(): Promise<cams> {
+        const fanCams = fetch(`${PATH_BASE}${CHANNEL_ID}${KEY}`)
+            .then(response => console.log(response.json))
+            .catch(error => console.log(error))
+    }
+
+
+    try {
+
+
+
+    } catch (e) {
+        return e
+    }
+
+
+
+
 }
