@@ -1,5 +1,5 @@
 import { resolvers } from "."
-
+const { google } = require('googleapis')
 export const hello = (args: any, context: any) => {
     return "Your GraphQL API is now LIVE!🎈 "
 }
@@ -10,13 +10,15 @@ export const getFanCams = (args: any, context: any) => {
     const KEY = `&key=${process.env.YOUTUBE_API_KEY}`
 
 
-
-
-    function fanCams(): Promise<cams> {
-        const fanCams = fetch(`${PATH_BASE}${CHANNEL_ID}${KEY}`)
-            .then(response => console.log(response.json))
-            .catch(error => console.log(error))
+    function fanCams() {
+        const promise = new Promise((resolve, reject) => {
+            fetch(`${PATH_BASE}${CHANNEL_ID}${KEY}`)
+                .then(response => console.log(response.json))
+                .catch(error => console.log(error))
+        })
     }
+
+
 
 
     try {
