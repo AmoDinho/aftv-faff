@@ -3,18 +3,18 @@ const schema = `
 
 
 type FanCams {
-    ID
-    title
-    views
+    ID: Int
+    title: String
+    views: Int
     
    
 }
 
 
 type FanCamPost {
-     ID
-     fanCamAsset
-     caption 
+     ID: Int
+     fanCamAsset: String
+     caption : String
 }
 
 type Query {
