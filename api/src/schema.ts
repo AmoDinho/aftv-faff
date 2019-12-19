@@ -2,11 +2,29 @@ const schema = `
 
 
 
-"""
-A hello world Query
-"""
+type FanCams {
+    ID
+    title
+    views
+    
+   
+}
+
+
+type FanCamPost {
+     ID
+     fanCamAsset
+     caption 
+}
+
 type Query {
-     hello: String!
+    hello: String
+   getFanCams: [FanCams]!
+   getFanCamPosts: [FanCamPost]! 
+} 
+
+type Mutation {
+  createFanCamPost(fanCamAsset: String!, caption: String!): FanCamPost 
 }
 
 `
