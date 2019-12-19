@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: aftbv-faff-server
+service: api
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
@@ -17,9 +17,10 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   stage: dev
   region: us-east-1
+  profile: personalAccount
   # To load environment variables externally
   # rename env.example to env.yml and uncomment
   # the following line. Also, make sure to not
