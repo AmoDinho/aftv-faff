@@ -15,7 +15,15 @@
             "node_modules/@types/graphql"
         ],
         "sourceMap": true,
-        "baseUrl": "."
+        "baseUrl": ".",
+        "paths": {
+            "@App/*": [
+                "src/*"
+            ],
+            "lib/*": [
+                "common/*"
+            ]
+        }
     },
     "include": [
         "./src/**/*"
