@@ -25,11 +25,17 @@ export const getFanCams = async (args: any, context: any) => {
             playlistId: 'PLub7sJmces1Q5DyKuroUilmXe5GXsuTBE'
         })
 
-        console.log(res.data.items)
+        //console.log(res.data.items)
 
         /*
 
         */
+        return res.data.items.map((item) => ({
+            ID: item.id,
+            title: item.snippet.title,
+            url: item.contentDetails.videoId
+        }))
+
     } catch (e) {
         return e
     }
