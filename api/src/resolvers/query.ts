@@ -20,15 +20,15 @@ export const getFanCams = async (args: any, context: any) => {
 
     try {
 
-        const res = await youtube.search.list({
-            part: "snippet",
-            channelId: "UCBTy8j2cPy6zw68godcE7MQ",
-            maxResults: 20
+        const res = await youtube.playlistItems.list({
+            part: 'id,snippet,contentDetails',
+            playlistId: 'PLub7sJmces1Q5DyKuroUilmXe5GXsuTBE'
         })
 
         console.log(res.data.items)
 
         /*
+
         */
     } catch (e) {
         return e
