@@ -1,4 +1,4 @@
-const resolvers = require('../resolvers')
+const resolvers = require('../resolvers/index')
 
 describe('[Query.getFanCams]', () => {
     const mockContext = {
@@ -8,4 +8,10 @@ describe('[Query.getFanCams]', () => {
     }
 
     const { getFanCams } = mockContext.dataSources.youtubeAPI
+
+    it('returns fanCams', async () => {
+        const res = await resolvers.Query.getFanCams(null, {}, mockContext)
+
+        expect(res).toHaveProperty(['ID', 'title', 'url'])
+    })
 })
