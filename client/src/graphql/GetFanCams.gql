@@ -1,0 +1,7 @@
+query GetFanCams {
+    getFanCams{
+        ID
+        title
+        url
+    }
+}
