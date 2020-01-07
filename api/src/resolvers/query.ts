@@ -25,7 +25,7 @@ export const getFanCams = async (args: any, context: any) => {
             playlistId: 'PLub7sJmces1Q5DyKuroUilmXe5GXsuTBE'
         })
 
-        //console.log(res.data.items)
+        console.log(res.data.items.id)
 
         /*
 

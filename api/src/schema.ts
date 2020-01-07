@@ -3,7 +3,7 @@ const schema = `
 
 
 type FanCams {
-    ID: Int
+    ID: String
     title: String
     url: String
 
