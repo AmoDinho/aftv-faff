@@ -22,7 +22,7 @@ export const getFanCams = async (args: any, context: any) => {
 
         const res = await youtube.playlistItems.list({
             part: 'id,snippet,contentDetails',
-            playlistId: 'PLub7sJmces1Q5DyKuroUilmXe5GXsuTBE'
+            playlistId: 'PLub7sJmces1TCKhWIkVsbcwSsPzUBZaKi'
         })
 
         console.log(res.data.items.id)
