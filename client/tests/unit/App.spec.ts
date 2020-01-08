@@ -11,7 +11,23 @@ describe('<App/>', () => {
     test('Display all FanCams', () => {
         const wrapper = shallowMount(App, { localVue })
         wrapper.setData({
-            getFanCams
+            getFanCams: [
+                {
+                    ID: '23434343434',
+                    title: 'Wenger left us in a mess',
+                    url: '/wertyirtrtid=23'
+                },
+                {
+                    ID: '54545454545',
+                    title: 'Chambers will be missed',
+                    url: '/eererfid=23'
+                },
+                {
+                    ID: '36567445',
+                    title: 'The board are deliousional',
+                    url: '/tgdfdfdfdid=23'
+                }
+            ]
         })
     })
 })
