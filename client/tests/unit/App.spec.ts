@@ -29,5 +29,6 @@ describe('<App/>', () => {
                 }
             ]
         })
+        expect(wrapper.element).toMatchSnapshot()
     })
 })
