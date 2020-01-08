@@ -10,6 +10,8 @@ describe('<App/>', () => {
 
     test('Display all FanCams', () => {
         const wrapper = shallowMount(App, { localVue })
-        wrapper
+        wrapper.setData({
+            getFanCams
+        })
     })
 })
