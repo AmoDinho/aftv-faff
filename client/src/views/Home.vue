@@ -1,6 +1,7 @@
 <template>
   <div class="home">
    <GetAllFanCams/>
+   <div class="bg-pink">Test Working</div>
   </div>
 </template>
 
