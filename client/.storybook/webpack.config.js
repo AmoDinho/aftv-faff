@@ -24,5 +24,15 @@ module.exports = ({config, mode}) => {
         use: ['style-loader', 'css-loader', 'sass-loader'],
         include: path.resolve(__dirname, '../')
     })
+
+    config.module.rules.push({
+        test: /\(ts)$/,
+        use: [
+            {
+                loader: require.resolve('awesoe-typescript-loader')
+            }
+        ]
+    })
+    config.resolve.extensions.push('.ts')
     return config
 }
