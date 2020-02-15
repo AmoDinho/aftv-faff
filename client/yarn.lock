@@ -11720,9 +11720,9 @@ yargs@^15.0.0:
     yargs-parser "^16.1.0"
 
 yarn@^1.15.0:
-  version "1.21.1"
-  resolved "https://registry.npm.taobao.org/yarn/download/yarn-1.21.1.tgz#1d5da01a9a03492dc4a5957befc1fd12da83d89c"
-  integrity sha1-HV2gGpoDSS3EpZV778H9EtqD2Jw=
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.0.tgz#acf82906e36bcccd1ccab1cfb73b87509667c881"
+  integrity sha512-KMHP/Jq53jZKTY9iTUt3dIVl/be6UPs2INo96+BnZHLKxYNTfwMmlgHTaMWyGZoO74RI4AIFvnWhYrXq2USJkg==
 
 yn@^3.0.0:
   version "3.1.1"
