@@ -16,11 +16,10 @@
     </ApolloQuery>
   </div>
 </template>
-        </ApolloQuery>
+        
  
     
-  </div>
-</template>
+  
 <script >
 export default {
   name: "GetAllFanCams",
